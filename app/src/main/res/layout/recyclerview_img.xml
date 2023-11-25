@@ -11,8 +11,7 @@
         android:layout_width="170dp"
         android:layout_height="170dp"
         android:background="@drawable/recyclerview_corner"
-        android:scaleType="centerCrop"
-        android:src="@drawable/ic_launcher_background"
+        android:scaleType="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

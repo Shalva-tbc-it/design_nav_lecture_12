@@ -16,28 +16,56 @@ class AddItems : AddItemsForRecyclerView() {
     override fun createItemList(): List<Item> {
         return listOf(
             Item(
-                image = "https://img.freepik.com/free-psd/cartoon-flower-bouquet_187299-9963.jpg?w=996&t=st=1700917366~exp=1700917966~hmac=392e2596fbe211f1155ca6eb8fe5c716fbfb024d8b13ab61c3723787b0ad0714",
+                image = "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 title = title,
                 rate = R.string._4_7,
                 sold = R.string._8_563_sold,
                 price = R.string._85_00
             ),
             Item(
-                image = "https://img.freepik.com/free-psd/cartoon-flower-bouquet_187299-9963.jpg?w=996&t=st=1700917366~exp=1700917966~hmac=392e2596fbe211f1155ca6eb8fe5c716fbfb024d8b13ab61c3723787b0ad0714",
+                image = "https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 title = R.string.marble_flower_vase,
                 rate = R.string._4_7,
                 sold = R.string._8_563_sold,
                 price = R.string._85_00
             ),
             Item(
-                image = "https://pngtree.com/freepng/ceramic-vase_5780349.html",
+                image = "https://images.pexels.com/photos/8408535/pexels-photo-8408535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 title = R.string.marble_flower_vase,
                 rate = R.string._4_7,
                 sold = R.string._8_563_sold,
                 price = R.string._85_00
             ),
             Item(
-                image = "https://pngtree.com/freepng/beautiful-still-life-dried-flower-vase-plant_5889793.html",
+                image = "https://images.pexels.com/photos/14875293/pexels-photo-14875293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                title = R.string.marble_flower_vase,
+                rate = R.string._4_7,
+                sold = R.string._8_563_sold,
+                price = R.string._85_00
+            ),
+            Item(
+                image = "https://images.pexels.com/photos/2121876/pexels-photo-2121876.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                title = title,
+                rate = R.string._4_7,
+                sold = R.string._8_563_sold,
+                price = R.string._85_00
+            ),
+            Item(
+                image = "https://images.pexels.com/photos/3910065/pexels-photo-3910065.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                title = R.string.marble_flower_vase,
+                rate = R.string._4_7,
+                sold = R.string._8_563_sold,
+                price = R.string._85_00
+            ),
+            Item(
+                image = "https://images.pexels.com/photos/8408535/pexels-photo-8408535.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+                title = R.string.marble_flower_vase,
+                rate = R.string._4_7,
+                sold = R.string._8_563_sold,
+                price = R.string._85_00
+            ),
+            Item(
+                image = "https://images.pexels.com/photos/14875293/pexels-photo-14875293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
                 title = R.string.marble_flower_vase,
                 rate = R.string._4_7,
                 sold = R.string._8_563_sold,
