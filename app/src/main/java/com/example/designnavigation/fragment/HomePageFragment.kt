@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.designnavigation.AddItems
 import com.example.designnavigation.adapter.ItemRecyclerViewAdapter
@@ -39,8 +40,18 @@ class HomePageFragment : Fragment() {
         adapter = ItemRecyclerViewAdapter()
         recyclerView.layoutManager = GridLayoutManager(context, 2)
         recyclerView.adapter = adapter
-        adapter.setData(item = itemList.toMutableList())
+        adapter.apply {
+            setData(item = itemList.toMutableList())
 
+            setOnItemClickListener { item ->
+                findNavController().navigate(
+                    HomePageFragmentDirections.actionHomePageFragmentToItemInfoFragment(
+                        item
+                    )
+                )
+//                Navigation.findNavController(requireView()).navigate(R.id.action_homePageFragment_to_itemInfoFragment)
+            }
+        }
     }
 
 

@@ -9,5 +9,18 @@
         android:id="@+id/homePageFragment"
         android:name="com.example.designnavigation.fragment.HomePageFragment"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePageFragment_to_itemInfoFragment"
+            app:destination="@id/itemInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemInfoFragment"
+        android:name="com.example.designnavigation.fragment.ItemInfoFragment"
+        android:label="fragment_item_info"
+        tools:layout="@layout/fragment_item_info" >
+        <argument
+            android:name="items"
+            app:argType="com.example.designnavigation.data_model.Item" />
+    </fragment>
 </navigation>
