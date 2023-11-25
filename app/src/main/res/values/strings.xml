@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Design Navigation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vase">Vase</string>
+    <string name="marble_flower_vase">Marble Flower Vase</string>
+    <string name="_4_7">4.7</string>
+    <string name="_8_563_sold">8.563 sold</string>
+    <string name="_85_00">$85.00</string>
+</resources>

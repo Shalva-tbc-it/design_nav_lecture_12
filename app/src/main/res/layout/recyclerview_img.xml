@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    android:background="@color/main_bg">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgVase"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:background="@drawable/recyclerview_corner"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgIcHeart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:src="@drawable/ic_heart"
+        app:layout_constraintEnd_toEndOf="@id/imgVase"
+        app:layout_constraintTop_toTopOf="@id/imgVase" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/marble_flower_vase"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgVase" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_star"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvRate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:text="@string/_4_7"
+        android:textColor="@color/white"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgRate"
+        app:layout_constraintStart_toEndOf="@id/imgRate"
+        app:layout_constraintTop_toTopOf="@id/imgRate" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgVerticalLine"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:layout_marginStart="7dp"
+        android:background="@color/white"
+        android:src="@color/white"
+        app:layout_constraintBottom_toBottomOf="@id/tvRate"
+        app:layout_constraintStart_toEndOf="@id/tvRate"
+        app:layout_constraintTop_toTopOf="@id/tvRate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/recyclerview_corner"
+        android:padding="3dp"
+        android:text="@string/_8_563_sold"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="@id/imgVerticalLine"
+        app:layout_constraintStart_toEndOf="@id/imgVerticalLine"
+        app:layout_constraintTop_toTopOf="@id/imgVerticalLine" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="@string/_85_00"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvRate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
