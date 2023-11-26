@@ -49,7 +49,6 @@ class HomePageFragment : Fragment() {
                         item
                     )
                 )
-//                Navigation.findNavController(requireView()).navigate(R.id.action_homePageFragment_to_itemInfoFragment)
             }
         }
     }
