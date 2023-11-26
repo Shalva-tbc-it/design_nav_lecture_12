@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.AppCompatImageView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/imgCircle"
+    android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:scaleType="center"
+    android:backgroundTint="@color/first_circle"
+    android:background="@drawable/recyclerview_circle"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="10dp"
+    />

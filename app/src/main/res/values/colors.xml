@@ -5,4 +5,11 @@
     <color name="sub_text">#BFBFC0</color>
     <color name="main_bg">#181A20</color>
     <color name="recycler_bg">#35383F</color>
+
+    <color name="first_circle">#DFDFDF</color>
+    <color name="second_circle">#607D89</color>
+    <color name="three_circle">#393939</color>
+    <color name="four_circle">#616161</color>
+    <color name="five_circle">#673AB2</color>
+    <color name="six_circle">#3F51B1</color>
 </resources>
