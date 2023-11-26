@@ -17,31 +17,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-<!--    <FrameLayout-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="330dp"-->
-<!--        android:orientation="vertical"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent">-->
-
-<!--        <androidx.viewpager2.widget.ViewPager2-->
-<!--            android:id="@+id/viewPager"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            tools:context=".ui.screens.intro.IntroViewPagerFragment" />-->
-
-<!--        <com.google.android.material.tabs.TabLayout-->
-<!--            android:id="@+id/tabLayoutCircle"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_gravity="bottom"-->
-<!--            android:background="@color/main_bg"-->
-<!--            app:tabBackground="@drawable/tab_pager_selector"-->
-<!--            app:tabGravity="center"-->
-<!--            app:tabIndicatorHeight="0dp" />-->
-<!--    </FrameLayout>-->
-
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgMainPhoto"
         android:layout_width="0dp"
@@ -158,6 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
+            android:maxLines="2"
             android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry"
             android:textColor="@color/sub_text"
             android:textSize="16sp"
@@ -183,26 +159,17 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvColor"/>
 
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/imgFirstColor"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:visibility="invisible"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvColor" />
 
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tvQuantity"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="25dp"
             android:text="@string/quantity"
             android:textColor="@color/white"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/imgFirstColor" />
+            app:layout_constraintTop_toBottomOf="@id/rcCircle" />
 
         <androidx.appcompat.widget.LinearLayoutCompat
             android:id="@+id/llcCount"

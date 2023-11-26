@@ -12,10 +12,10 @@ import com.example.designnavigation.databinding.RecyclerviewCircleBinding
 class ColorRecyclerViewAdapter: RecyclerView.Adapter<ColorRecyclerViewAdapter.ColorViewHolder>() {
 
     private var colors = listOf<Color>()
-
     private var onItemClickListener: ((item: Item) -> Unit)? = null
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ColorViewHolder {
+
         return ColorViewHolder(
             RecyclerviewCircleBinding.inflate(
                 LayoutInflater.from(parent.context),
@@ -30,7 +30,6 @@ class ColorRecyclerViewAdapter: RecyclerView.Adapter<ColorRecyclerViewAdapter.Co
     override fun onBindViewHolder(holder: ColorViewHolder, position: Int) {
         val current = colors[position]
         holder.bind(current)
-
     }
 
     fun setOnItemClickListener(listener: (item: Item) -> Unit) {
@@ -46,7 +45,9 @@ class ColorRecyclerViewAdapter: RecyclerView.Adapter<ColorRecyclerViewAdapter.Co
         fun bind(color: Color) {
             binding.imgCircle.backgroundTintList =
                 ColorStateList.valueOf(ContextCompat.getColor(itemView.context, color.circleColor))
+
         }
+
 
     }
 
