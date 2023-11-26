@@ -9,6 +9,7 @@ import com.example.designnavigation.R
 import com.example.designnavigation.data_model.Item
 import com.example.designnavigation.databinding.RecyclerviewImgBinding
 import com.squareup.picasso.Picasso
+import java.util.Locale
 
 class ItemRecyclerViewAdapter : ListAdapter<Item, ItemRecyclerViewAdapter.ItemViewHolder>(object :
     DiffUtil.ItemCallback<Item>() {
@@ -24,12 +25,22 @@ class ItemRecyclerViewAdapter : ListAdapter<Item, ItemRecyclerViewAdapter.ItemVi
 ) {
 
     private var onItemClickListener: ((item: Item) -> Unit)? = null
+    private var originalList: List<Item> = emptyList()
 
     fun setOnItemClickListener(listener: (item: Item) -> Unit) {
         onItemClickListener = listener
     }
 
+    fun filter(query: String) {
+        val lowercaseQuery = query.lowercase(Locale.getDefault())
+        val filteredList = originalList.filter {
+            it.title.lowercase(Locale.getDefault()).contains(lowercaseQuery)
+        }
+        submitList(filteredList)
+    }
+
     fun setData(item: MutableList<Item>) {
+        originalList = item
         submitList(item)
     }
 

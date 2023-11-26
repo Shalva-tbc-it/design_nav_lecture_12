@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.widget.addTextChangedListener
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -31,8 +32,26 @@ class HomePageFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         recyclerView()
+        listener()
     }
 
+    private fun listener() = with(binding) {
+        imgSearch.setOnClickListener {
+            imgSearch.visibility = View.GONE
+            imgCancel.visibility = View.VISIBLE
+            edSearch.visibility = View.VISIBLE
+        }
+        imgCancel.setOnClickListener {
+            edSearch.text?.clear()
+            imgSearch.visibility = View.VISIBLE
+            imgCancel.visibility = View.GONE
+            edSearch.visibility = View.GONE
+        }
+
+        edSearch.addTextChangedListener {
+            adapter.filter(it.toString())
+        }
+    }
 
 
 

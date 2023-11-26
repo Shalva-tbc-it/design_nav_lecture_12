@@ -8,7 +8,7 @@ import java.util.UUID
 data class Item(
     val id: UUID = UUID.randomUUID(),
     val image: MutableList<String>,
-    val title: Int,
+    val title: String,
     val rate: Int,
     val sold: Int,
     val price: Int
