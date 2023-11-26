@@ -73,7 +73,7 @@ class ItemRecyclerViewAdapter : ListAdapter<Item, ItemRecyclerViewAdapter.ItemVi
                 .placeholder(R.drawable.ic_launcher_background)
                 .error(R.drawable.ic_launcher_foreground)
                 .into(imgVase)
-            tvTitle.setText(item.title)
+            tvTitle.text = item.title
             tvRate.setText(item.rate)
             tvSold.setText(item.sold)
             tvPrice.setText(item.price)

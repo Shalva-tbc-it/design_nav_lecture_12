@@ -17,12 +17,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+<!--    <FrameLayout-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="330dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent">-->
+
+<!--        <androidx.viewpager2.widget.ViewPager2-->
+<!--            android:id="@+id/viewPager"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            tools:context=".ui.screens.intro.IntroViewPagerFragment" />-->
+
+<!--        <com.google.android.material.tabs.TabLayout-->
+<!--            android:id="@+id/tabLayoutCircle"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="bottom"-->
+<!--            android:background="@color/main_bg"-->
+<!--            app:tabBackground="@drawable/tab_pager_selector"-->
+<!--            app:tabGravity="center"-->
+<!--            app:tabIndicatorHeight="0dp" />-->
+<!--    </FrameLayout>-->
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/imgMainPhoto"
         android:layout_width="0dp"
-        android:layout_height="300dp"
+        android:layout_height="330dp"
         android:elevation="0dp"
-        android:scaleType="centerCrop"
+        android:scaleType="centerInside"
         android:src="@drawable/ic_launcher_background"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,7 +56,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:padding="20dp"
+        android:padding="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -187,9 +212,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="10dp"
                 android:text="@string/minus"
-                android:textStyle="bold"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tvCount"
@@ -252,10 +277,10 @@
             android:layout_marginEnd="20dp"
             android:background="@drawable/btn_corner"
             android:drawableStart="@drawable/ic_shopping_bag"
-            android:textAlignment="center"
             android:paddingStart="60dp"
             android:paddingEnd="40dp"
             android:text="@string/add_to_card"
+            android:textAlignment="center"
             android:textAllCaps="false"
             app:layout_constraintBottom_toBottomOf="@id/tvPrice"
             app:layout_constraintEnd_toEndOf="parent"
